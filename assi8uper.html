@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="area1"  style="height: 200px;"></textarea>
+    <textarea id="area2"  style="height: 200px;"></textarea><br>
+    <button onclick="Upper()">Upper Case</button>
+    <button onclick="Lower()" style="margin-left: 100px;">Lower Case</button>
+    <button onclick="Delete()">clear</button>
+    <script>
+        function Upper(){
+      let  a = document.getElementById("area1").value;
+        uppercasevalue = a.toUpperCase();
+        document.getElementById("area2").innerText=uppercasevalue;
+        }
+        function Lower(){
+      let  a = document.getElementById("area1").value;
+        uppercasevalue = a.toLowerCase();
+        document.getElementById("area2").innerText=uppercasevalue;
+        //document.getElementById("area2").value="";
+        }
+        function Delete(){
+         document.getElementById("area2").value="";
+         
+        }
+       
+        </script>
+</body>
+</html>
