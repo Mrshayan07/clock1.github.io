@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userdata=parseInt( prompt("HOW MANY USER DATA IS REQUIRED?"));
+        var table =" <table  border='2'><tr><th>Roll No</th><th>Name</th><th>Result</th></tr>";
+        for(let i=0; i<userdata; i++){
+             let rollno=parseInt( prompt("Enter The  Roll NO"+(i+1)+":"));
+            let name=prompt("Enter The User Name"+(i+1)+":");
+            let Result=prompt("Enter The User REsult"+(i+1)+":");
+            table+=" <tr><td>"+rollno+"</td><td>"+name+"</td><td>"+Result+"</td></tr>";
+        }
+        table+="</table>";
+        document.write(table);
+    </script>
+</body>
+</html>
